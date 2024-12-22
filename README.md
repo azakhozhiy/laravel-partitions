@@ -1,4 +1,4 @@
-# Laravel Exceptions
+# Laravel Partitions
 
 ## License
 
