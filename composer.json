@@ -1,0 +1,44 @@
+{
+  "name": "azakhozhiy/laravel-partitions",
+  "version": "1.2.0",
+  "description": "Laravel Partitions",
+  "authors": [
+    {
+      "name": "Aleksandr Zakhozhiy",
+      "email": "azakhozhiiy@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^8.3",
+    "laravel/framework": "^10.48",
+    "lastguest/murmurhash": "^2.1",
+    "tucker-eric/eloquentfilter": "^3.1",
+    "reedware/laravel-composite-relations": "^4.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.4",
+    "orchestra/testbench": "^8.0",
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "AZakhozhiy\\Laravel\\Partitions\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AZakhozhiy\\Laravel\\Partitions\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test:static": "phpstan",
+    "csf": [
+      "./vendor/bin/php-cs-fixer fix src --using-cache=no --allow-risky=yes"
+    ],
+    "clb": [
+      "git branch | grep -v $(git branch --show-current) | grep -v \"master\" | xargs git branch -D"
+    ]
+  },
+  "minimum-stability": "stable",
+  "type": "library"
+}

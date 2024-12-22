@@ -1,0 +1,7 @@
+.idea
+vendor
+ci/reports/*
+!ci/reports/.gitkeep
+.phpunit.result.cache
+.DS_Store
+composer.lock
